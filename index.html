@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rps-container">
+        <h1 class="rps-title">Rock Paper Scissors</h1>
+        <div class="rps-scoreboard">
+            <div class="rps-score-card">
+                <div class="rps-label">You</div>
+                <div class="rps-score" id="player-score">0</div>
+            </div>
+            <div class="rps-vs">vs</div>
+            <div class="rps-score-card">
+                <div class="rps-label">Computer</div>
+                <div class="rps-score" id="computer-score">0</div>
+            </div>
+        </div>
+        <div class="rps-round-bar">
+            <span id="round">1</span>/5
+        </div>
+        <div class="rps-choices">
+            <button class="rps-choice" id="rock" title="Rock">
+                <span class="rps-icon">🪨</span>
+                <span>Rock</span>
+            </button>
+            <button class="rps-choice" id="paper" title="Paper">
+                <span class="rps-icon">📄</span>
+                <span>Paper</span>
+            </button>
+            <button class="rps-choice" id="scissors" title="Scissors">
+                <span class="rps-icon">✂️</span>
+                <span>Scissors</span>
+            </button>
+        </div>
+        <div class="rps-choices-display">
+            <div class="rps-choice-display">
+                <div class="rps-choice-label">Your choice</div>
+                <div class="rps-choice-icon" id="player-choice-icon">?</div>
+            </div>
+            <div class="rps-choice-display">
+                <div class="rps-choice-label">Computer's choice</div>
+                <div class="rps-choice-icon" id="computer-choice-icon">?</div>
+            </div>
+        </div>
+        <div class="rps-result-bar" id="result">Make your choice!</div>
+        <button id="play-again" class="rps-reset-btn" style="display:none;">Reset Game</button>
+        <div id="final-message" class="rps-final-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

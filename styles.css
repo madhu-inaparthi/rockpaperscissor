@@ -1,0 +1,167 @@
+/* styles.css for Rock Paper Scissors Game */
+body {
+    background: repeating-linear-gradient(135deg, #232946 0 20px, #1a1f2b 20px 40px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.rps-container {
+    max-width: 540px;
+    margin: 40px auto;
+    background: rgba(30, 34, 54, 0.98);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    padding: 36px 28px 28px 28px;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.08);
+}
+
+.rps-title {
+    margin-bottom: 28px;
+    color: #6ee7b7;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 0 2px 8px #0002;
+}
+
+.rps-scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+}
+.rps-score-card {
+    background: #232946;
+    border-radius: 12px;
+    padding: 18px 32px;
+    min-width: 90px;
+    color: #fff;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px #0002;
+}
+.rps-label {
+    font-size: 1em;
+    margin-bottom: 6px;
+    color: #b8c1ec;
+}
+.rps-score {
+    font-size: 2.1em;
+    font-weight: 700;
+    color: #6ee7b7;
+}
+.rps-vs {
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #0002;
+}
+.rps-round-bar {
+    background: #44475a;
+    color: #6ee7b7;
+    border-radius: 8px;
+    margin: 0 auto 22px auto;
+    padding: 8px 0;
+    font-size: 1.1em;
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.rps-choices {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 22px;
+}
+.rps-choice {
+    background: #232946;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 22px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+.rps-choice:hover, .rps-choice:focus {
+    background: #393e5c;
+    transform: scale(1.08);
+}
+.rps-icon {
+    font-size: 2.1em;
+    margin-bottom: 2px;
+}
+.rps-choices-display {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 18px;
+}
+.rps-choice-display {
+    background: #232946;
+    border-radius: 12px;
+    padding: 18px 24px;
+    min-width: 110px;
+    color: #fff;
+    box-shadow: 0 2px 8px #0002;
+}
+.rps-choice-label {
+    font-size: 1em;
+    color: #b8c1ec;
+    margin-bottom: 8px;
+}
+.rps-choice-icon {
+    font-size: 2.2em;
+    color: #f7b801;
+    min-height: 1.2em;
+}
+.rps-result-bar {
+    background: #44475a;
+    color: #fff;
+    border-radius: 8px;
+    margin: 0 auto 18px auto;
+    padding: 12px 0;
+    font-size: 1.2em;
+    width: 95%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-height: 1.5em;
+}
+.rps-final-message {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #6ee7b7;
+}
+.rps-reset-btn {
+    background: linear-gradient(90deg, #ff6b6b 0%, #f7b801 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 32px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.rps-reset-btn:hover, .rps-reset-btn:focus {
+    background: linear-gradient(90deg, #f7b801 0%, #ff6b6b 100%);
+}
